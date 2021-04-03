@@ -1,14 +1,16 @@
 {% load static %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="{% static 'app.css' %}">
+    <script defer type="text/javascript" src="{% static 'app.js' %}"></script>
   </head>
-  <body>
+  <body x-data="{ number: 1 }">
     <div id="django-logo"></div>
-    <div id="django">Hello from Django!</div>
+    <div id="django" @click="number = number + 1">Hello from Django!</div>
 
     <div id="webpack"></div>
+    <p x-text="number">
     <div id="chunk"></div>
-    <script type="text/javascript" src="{% static 'app.js' %}"></script>
   </body>
 </html>
