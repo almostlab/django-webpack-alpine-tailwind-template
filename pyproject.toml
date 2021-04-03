@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tixxpass"
+version = "0.1.0"
+description = ""
+authors = ["manhtai"]
+
+[tool.poetry.dependencies]
+python = "3.9"
+gunicorn = "^20.1.0"
+whitenoise = "^5.2.0"
+django = "3.1.7"
+
+
+[tool.poetry.dev-dependencies]
+honcho = "^1.0.1"
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
