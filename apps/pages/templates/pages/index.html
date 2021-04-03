@@ -6,8 +6,7 @@
     <script defer type="text/javascript" src="{% static 'app.js' %}"></script>
   </head>
   <body x-data="{ number: 1 }">
-    <div id="django-logo"></div>
-    <div id="django" @click="number = number + 1">Hello from Django!</div>
+    <div class="text-blue-100" @click="number = number + 1">Hello from Django!</div>
 
     <div id="webpack"></div>
     <p x-text="number">
